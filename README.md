@@ -1,5 +1,5 @@
 # bs-niceenvironment-fix
-Fixes the bug in Ikeiwa's EditSaber program in the NiceEnvironment where the top and bottom lasers are reversed in the actual Beat Saber game.
+Fixes the bug in Ikeiwa's EditSaber program in the NiceEnvironment where the top and bottom lasers are reversed in the actual Beat Saber game.  Coded in Python 3.4.4.
 
 This program is meant to be used either if you want to convert the level from editable to playable, or vice-versa.
 
