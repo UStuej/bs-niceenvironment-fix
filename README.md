@@ -4,8 +4,8 @@ Fixes the bug in Ikeiwa's EditSaber program in the NiceEnvironment where the top
 This program is meant to be used either if you want to convert the level from editable to playable, or vice-versa.
 
 How to install:
-  1. Place NiceEnvironmentFix.py in your Beat Saber folder.
-  2. Install Python 3.4.4 from https://www.python.org/downloads/release/python-344/
+  1. Install Python 3.4.4 from https://www.python.org/downloads/release/python-344/
+  2. Place NiceEnvironmentFix.py in your Beat Saber folder.
 
 How to use:
   1. Double-click on NiceEnvironmentFix.py
