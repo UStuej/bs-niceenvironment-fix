@@ -17,8 +17,10 @@ if info_list[info_list.index("environmentName")+2] != "NiceEnvironment":
 for dif in ("Easy","Normal","Hard","Expert","ExpertPlus"):
     try:
         f = open(lvlp+"/"+dif+".json","r")
-        switcht2 = list()
-        switcht3 = list()
+        switcht2i = list()
+        switcht3i = list()
+        switcht12i = list()
+        switcht13i = list()
         data_list = f.read().split('"')
         final_data_tw = str()
         offseti = data_list.index("_events")
@@ -29,17 +31,25 @@ for dif in ("Easy","Normal","Hard","Expert","ExpertPlus"):
                 offseti = data_list.index("_type",offseti,toofar) + 1
                 
                 if data_list[offseti] == ":2,":
-                    switcht3.append(offseti)
+                    switcht3i.append(offseti)
                 elif data_list[offseti] == ":3,":
-                    switcht2.append(offseti)
+                    switcht2i.append(offseti)
+                elif data_list[offseti] == ":12,":
+                    switcht13i.append(offseti)
+                elif data_list[offseti] == ":13,":
+                    switcht12i.append(offseti)
         
         except ValueError:
             pass
         
-        for i in switcht2:
+        for i in switcht2i:
             data_list[i] = ":2,"
-        for i in switcht3:
+        for i in switcht3i:
             data_list[i] = ":3,"
+        for i in switcht12i:
+            data_list[i] = ":12,"
+        for i in switcht13i:
+            data_list[i] = ":13,"
         
         f.close()
         os.remove(lvlp+"/"+dif+".json")
