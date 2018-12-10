@@ -8,7 +8,7 @@ try:
     f = open(lvlp+"/info.json","r")
 except FileNotFoundError:
     print("FileNotFoundError:  Level does not exist!")
-    sleep(1)
+    sleep(0.5)
     quit()
 info_list = f.read().split('"')
 if info_list[info_list.index("environmentName")+2] != "NiceEnvironment":
@@ -66,4 +66,4 @@ for dif in ("Easy","Normal","Hard","Expert","ExpertPlus"):
         pass
 
 print("Done!")
-sleep(1)
+sleep(0.5)
