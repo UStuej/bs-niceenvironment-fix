@@ -9,4 +9,4 @@ How to install:
 
 How to use:
   1. Double-click on NiceEnvironmentFix.py
-  2. Enter the level folder's (the one that you want to fix) path when the program asks.
+  2. Enter the level folder's path (the one that you want to fix) when the program asks.
