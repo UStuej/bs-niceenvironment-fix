@@ -1,5 +1,5 @@
 from time import sleep
-import os
+from os import remove
 
 lvlp = "CustomSongs/" + input("Please provide path to level folder (use /):\t.../CustomSongs/")
 print("Working...")
@@ -52,7 +52,7 @@ for dif in ("Easy","Normal","Hard","Expert","ExpertPlus"):
             data_list[i] = ":13,"
         
         f.close()
-        os.remove(lvlp+"/"+dif+".json")
+        remove(lvlp+"/"+dif+".json")
         f = open(lvlp+"/"+dif+".json","w")
         for i in range(len(data_list)):
             final_data_tw += data_list[i]
